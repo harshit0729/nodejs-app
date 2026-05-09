@@ -79,10 +79,10 @@ jobs:
 
       - name: Push backend image
         run: |
-          docker tag netflix-server harshittjainn/nodejs-app:latest
-          docker push harshittjainn/nodejs-app:latest
+          docker tag netflix-server harshittjainn/node:latest
+          docker push harshittjainn/node:latest
 
       - name: Push frontend image
         run: |
-          docker tag netflix-client harshittjainn/reactjs-app:latest
-          docker push harshittjainn/reactjs-app:latest
+          docker tag netflix-client harshittjainn/reactjs:latest
+          docker push harshittjainn/reactjs:latest

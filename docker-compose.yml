@@ -1,6 +1,6 @@
 services:
   server:
-    image: harshittjainn/nodejs-app:latest
+    image: harshittjainn/node:latest
     build:
       context: .
       dockerfile: Dockerfile.server
@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
 
   client:
-    image: harshittjainn/reactjs-app:latest
+    image: harshittjainn/reactjs:latest
     build:
       context: ./client
       dockerfile: ../Dockerfile.client
