@@ -2,6 +2,6 @@ node_modules
 client/node_modules
 client/build
 .git
-*.md
+README.md
 .env
 .DS_Store
