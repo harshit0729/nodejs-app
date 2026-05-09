@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   server:
     image: harshittjainn/nodejs-app:latest
@@ -19,8 +17,8 @@ services:
   client:
     image: harshittjainn/reactjs-app:latest
     build:
-      context: .
-      dockerfile: Dockerfile.client
+      context: ./client
+      dockerfile: ../Dockerfile.client
     container_name: netflix-client
     ports:
       - "3000:80"
