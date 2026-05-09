@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   server:
+    image: harshittjainn/nodejs-app:latest
     build:
       context: .
       dockerfile: Dockerfile.server
@@ -16,6 +17,7 @@ services:
     restart: unless-stopped
 
   client:
+    image: harshittjainn/reactjs-app:latest
     build:
       context: .
       dockerfile: Dockerfile.client
